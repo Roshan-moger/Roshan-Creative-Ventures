@@ -1,0 +1,473 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Header styles */
+header {
+    padding: 40px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo i {
+    height: 45px;
+    width: 45px;
+    background-color: #007ced;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 10px;
+    margin-right: 5px;
+    margin-left: 15px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .logo .logo-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+  }
+/* Container styles */
+.cont {
+    background-color: #222;
+    min-height: 100%;
+   width: 100%;
+
+
+
+}
+
+.content {
+    max-width:100%;
+    margin: 0 auto;
+}
+
+/* Top section styles */
+.top-section {
+    margin: 0px;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+
+}
+nav .togglebtn {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 45px;
+    right: 3%;
+    z-index: 5;
+    cursor: pointer;
+    display: none;
+  }
+  
+  nav .togglebtn span {
+    display: block;
+    background-color: #007ced;
+    margin: 5px 0px;
+    width: 100%;
+    height: 3px;
+    transition: 0.3s;
+    transition-property: transform, opacity;
+  }
+  
+  nav .navlinks {
+    list-style-type: none;
+    align-items: end;
+  }
+  
+  nav .navlinks li {
+    display: inline-block;
+  }
+  
+  nav .navlinks li a {
+    color: #e5e5e5;
+    margin-right: 2.5rem;
+  }
+  
+
+.top-section h1 {
+    font-size: 60px;
+    font-weight: 500;
+    color: #007ced;
+    text-align: center;
+    text-decoration: dashed #007ced;
+}
+
+.top-section h4 {
+    font-size: 30px;
+    text-align: end;
+}
+
+/* Image styles */
+.image-container,
+img {
+   
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/* About section styles */
+.about_section {
+    margin-top: 60px;
+}
+
+.about_section h2 {
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #007ced;
+    margin-left: 15px;
+}
+
+.about_section p {
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    color: #e5e5e5;
+    margin-left: 15px;
+}
+
+/* Biography styles */
+.biography h3 {
+    font-size: 50px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #007ced;
+    margin-left: 15px;
+}
+
+.biography ol {
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+    margin-left: 50px;
+    color: #e5e5e5;
+    text-transform: uppercase;
+}
+.biography ul {
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+    margin-left: 50px;
+    color: #e5e5e5;
+    text-transform: initial;
+}
+
+.biography .skills {
+    font-size: 30px;
+    color: azure;
+}
+
+.biography span {
+    font-size: 25px;
+    color: #e5e5e5;
+}
+
+/* Media queries for responsive design */
+
+/* Media query for screens with a maximum width of 930px */
+@media (max-width: 930px) {
+    .top-section h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .about_section p {
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 2px;
+        margin-left: 0px;
+    }
+
+    .top-section h4 {
+        text-align: center;
+    }
+
+    .image-container, img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about_section h2 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .biography h3 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .biography ol {
+        margin-left: 10px;
+    }
+    .biography ul {
+        margin-left: 10px;
+    }
+
+    .biography ul {
+        font-size: 22px;
+    }
+    .biography ol {
+        font-size: 25px;
+    }
+    .biography .skills {
+        font-size: 25px;
+    }
+    .biography span {
+        font-size: 20px;
+    }
+}
+
+/* Media query for screens with a maximum width of 730px */
+@media (max-width: 730px) {
+    .top-section h1 {
+        font-size: 35px;
+        margin-left: 10px;
+    }
+
+    .top-section h4 {
+        font-size: 18px;
+    }
+
+    .image-container, img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about_section h2 {
+        font-size: 35px;
+    }
+
+    .about_section p {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 2px;
+        margin-left: 0px;
+    }
+
+    .biography h3 {
+        font-size: 35px;
+    }
+
+    .biography ol {
+        font-size: 18px;
+        line-height: 25px;
+        margin-left: 10px;
+    }
+
+    .biography ul {
+        font-size: 16px;
+        line-height: 20px;
+        margin-left: 0px;
+    }
+
+    .biography .skills {
+        font-size: 18px;
+    }
+
+    .biography .skills span {
+        font-size: 16px;
+    }
+
+    footer p {
+        font-size: 10px;
+        margin-top: 20px;
+    }
+}
+
+/* Media query for screens with a maximum width of 480px */
+@media (max-width: 480px) {
+    .top-section h1 {
+        font-size: 25px;
+        margin-top: 40px;
+        margin-left: 30px;
+    }
+
+    .top-section h4 {
+        font-size: 13px;
+    }
+
+    .image-container,
+    img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .about_section h2 {
+        font-size: 20px;
+    }
+
+    .about_section p {
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 1.5px;
+    }
+
+    .biography h3 {
+        font-size: 20px;
+    }
+
+    .biography ul {
+        font-size: 14px;
+        line-height: 24px;
+        margin-left: 0;
+    }
+    .biography ol {
+        font-size: 16px;
+        margin-left: 0;
+    }
+
+    .biography .skills {
+        font-size: 16px;
+        margin-left: 0px;
+    }
+
+    .biography .skills span {
+        font-size: 14px;
+    }
+
+    
+}
+
+/* Media query for screens with a maximum width of 430px */
+@media (max-width: 430px) {
+    .image-container,
+    img {
+        width: 120px; /* Adjust the width for screens up to 430px */
+        height: 120px; /* Adjust the height accordingly */
+    }
+}
+
+@media (max-width: 768px) {
+    .image-container,
+    img {
+        width: 200px; /* Adjust the width for smaller screens */
+        height: 200px; /* Adjust the height accordingly */
+    }
+}
+
+/* Media query for screens with a maximum width of 530px */
+@media (max-width: 530px) {
+    .image-container,
+    img {
+        width: 150px; /* Adjust the width for even smaller screens */
+        height: 150px; /* Adjust the height accordingly */
+    }
+}
+
+/* Remove margin-left for introduction section */
+.introduction {
+    margin-left: 0;
+}
+@media (max-width: 930px) {
+   
+      
+      .logo i {
+        height: 30px;
+        width: 30px;
+       
+        border-radius: 50%;
+        font-weight: 700;
+        font-size: 1.5rem;
+        
+        padding: 2px;
+        margin-right: 5px;
+        cursor: pointer;
+        
+      }
+      
+      .logo .logo-text {
+        font-size: 18px;
+        font-weight: 700;
+      }
+     
+
+    nav .togglebtn {
+      display: initial;
+    }
+  
+    .click {
+      top: 45px;
+    }
+  
+    .click span {
+      position: absolute;
+      margin-top: 12px;
+    }
+  
+    .click span:first-child {
+      transform: rotate(-40deg);
+    }
+  
+    .click span:nth-child(2) {
+      opacity: 0;
+      margin: 0;
+    }
+  
+    .click span:last-child {
+      transform: rotate(45deg);
+      top: 0;
+    }
+  
+    nav .navlinks {
+      position: absolute;
+      margin-top: 100px;
+      top: 0;
+      display: none;
+      right:-60%;
+      bottom: 0;
+      width: 30%;
+      height: 200px;
+      background-color: #222;
+      z-index: 3;
+      box-shadow: 5px 13px 30px rgba(0, 0, 0, 0.1);
+      transition:  right 0.9s ease;
+      padding: 25px 0px;
+    }
+  
+    nav .navlinks li {
+      display: block;
+    }
+  
+    nav .navlinks li a {
+      display: block;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+  
+    nav .navlinks.open {
+      right: 0;
+      display: block;
+      transition:  right 0.9s ease;
+    }
+   
+    .cont .contactInfo{
+        width: 100%;
+        margin-left: 30px;
+    }
+    .cont .contactForm{
+        width: 80%;
+    }
+    
+  }
+  
+ 

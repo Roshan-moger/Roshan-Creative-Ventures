@@ -1,0 +1,442 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+  }
+  
+
+  body {
+    overflow-x: hidden;
+  }
+  
+  
+  
+  
+  .Contact{
+  
+    margin-top: 0;
+    background-color: #222;
+    color: #e5e5e5;
+    
+
+  }
+  .cont{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px,100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #222;
+    color: #e5e5e5;
+  }
+  
+  header {
+    padding: 40px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo i {
+    height: 45px;
+    width: 45px;
+    background-color: #007ced;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .logo .logo-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+  }
+  
+  nav .togglebtn {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 45px;
+    right: 3%;
+    z-index: 5;
+    cursor: pointer;
+    display: none;
+  }
+  
+  nav .togglebtn span {
+    display: block;
+    background-color: #007ced;
+    margin: 5px 0px;
+    width: 100%;
+    height: 3px;
+    transition: 0.3s;
+    transition-property: transform, opacity;
+  }
+  
+  nav .navlinks {
+    list-style-type: none;
+  }
+  
+  nav .navlinks li {
+    display: inline-block;
+  }
+  
+  nav .navlinks li a {
+    color: #e5e5e5;
+    margin-right: 2.5rem;
+  }
+  .content{
+    max-width: 800px;
+    text-align: center;
+  }
+  .content h2{
+    font-size: 36px;
+    font-weight: 500;
+  }
+  .content p{
+    font-size: 23px;
+    font-weight: 300;
+  }
+  .information{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin: 40px;
+  }
+ 
+
+  .information .contactInfo{
+    min-width: 40%;
+    display: flex;
+    flex-direction: column;
+  }
+  .information .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+  }
+  .information .contactInfo .box .icon{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e5e5;
+    color: #007ced;
+    font-size: 25px;
+    border-radius: 50%;
+  }
+  .information .contactInfo .box .text{
+    margin-left: 25px;
+    display: flex;
+    font-size: 20px;
+    font-weight: 300;
+    flex-direction: column;
+  }
+  .information .contactInfo .box .text h3{
+    font-weight: 500;
+    color: #007ced;
+    font-size: 30px;
+  }
+  .information .contactInfo .box .text p{
+    font-size: 20px;
+  }
+  .contactForm{
+    width: 40%;
+    padding: 40px;
+    background-color: #fff;
+    color: #222;
+    border-radius: 5%;
+  }
+  .contactForm h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: #007ced;
+  }
+  .contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .contactForm .inputBox input,.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    resize: none;
+  }
+  .contactForm .inputBox span{
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+  }
+  .contactForm .inputBox input:focus~ span,
+  .contactForm .inputBox input:valid~ span,
+  .contactForm .inputBox textarea :focus~ span,
+  .contactForm .inputBox textarea:valid~ span{
+    color:#080909;
+    font-size: 12px;
+    transform: translateY(-20px);
+  }
+
+.contactForm .inputBox button{
+    width: 100px;
+    background-color: #222;
+    color: #e5e5e5;
+    cursor: pointer;
+    padding: 10px;
+}
+
+@media (max-width: 930px) {
+    .content h2{
+        font-size: 28px;
+        font-weight: 500;
+      }
+      .content p{
+        font-size: 16px;
+        font-weight: 300;
+      }
+    .Contact {
+        flex-direction: column;
+        padding-top: 0;
+        margin-top: 0;
+      }
+      .information{
+        flex-direction: column;
+        padding-top: 0;
+      }
+      .information .contactInfo .box{
+        position: relative;
+        padding: 0px 0;
+        display: flex;}
+
+      .information .contactInfo .box .text p{
+        font-size: 14x;
+      }
+       .information .contactInfo .box .text h3{
+    font-weight: 500;
+    color: #007ced;
+    font-size: 20px;
+  }
+      .logo i {
+        height: 30px;
+        width: 30px;
+       
+        border-radius: 50%;
+        font-weight: 700;
+        font-size: 1.5rem;
+        
+        padding: 2px;
+        margin-right: 5px;
+        cursor: pointer;
+        
+      }
+      
+      .logo .logo-text {
+        font-size: 18px;
+        font-weight: 700;
+      }
+      .information .contactInfo .box{
+        position: relative;
+        padding:  0;
+        display: flex;
+      }
+      .information .contactInfo .box .icon{
+        width: 30px;
+        height: 30px;
+        display: flex;
+        
+      
+        font-size: 20px;
+        border-radius: 50%;
+      }
+      .information .contactInfo .box .text{
+        margin-left: 25px;
+        display: flex;
+        font-size: 15px;
+        font-weight: 300;
+        flex-direction: column;
+      }
+      .contactForm h2{
+        font-size: 20px;
+        font-weight: 700;
+        color: #007ced;
+      }
+      
+
+    nav .togglebtn {
+      display: initial;
+    }
+  
+    .click {
+      top: 45px;
+    }
+  
+    .click span {
+      position: absolute;
+      margin-top: 12px;
+    }
+  
+    .click span:first-child {
+      transform: rotate(-40deg);
+    }
+  
+    .click span:nth-child(2) {
+      opacity: 0;
+      margin: 0;
+    }
+  
+    .click span:last-child {
+      transform: rotate(45deg);
+      top: 0;
+    }
+  
+    nav .navlinks {
+      position: absolute;
+      margin-top: 100px;
+      top: 0;
+      right:-60%;
+      bottom: 0;
+      width: 40%;
+      height: 200px;
+      background-color: #222;
+      z-index: 3;
+      box-shadow: 5px 13px 30px rgba(0, 0, 0, 0.1);
+      transition:  right 0.9s ease;
+      display: none;
+    }
+  
+    nav .navlinks li {
+      display: block;
+    }
+  
+    nav .navlinks li a {
+      display: block;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+  
+    nav .navlinks.open {
+      right: 0;
+      display:block;
+    }
+   
+    .cont .contactInfo{
+        width: 100%;
+        margin-left: 30px;
+    }
+    .cont .contactForm{
+        width: 80%;
+    }
+    
+  }
+
+  @media (max-width: 485px){
+    .content h2{
+      font-size: 20px;
+      font-weight: 500;
+    }
+    .content p{
+      font-size: 14px;
+      font-weight: 300;
+    }
+  .Contact {
+      flex-direction: column;
+      padding-top: 0;
+      margin-top: 0;
+    }
+    .information{
+      flex-direction: column;
+      padding-top: 0;
+    }
+    .information .contactInfo .box{
+      position: relative;
+      padding: 0px 0;
+      display: flex;
+    }
+
+    
+     .information .contactInfo .box .text h3{
+  font-weight: 500;
+  color: #007ced;
+  font-size: 16px;
+}
+    .logo i {
+      height: 30px;
+      width: 30px;
+     
+      border-radius: 50%;
+      font-weight: 700;
+      font-size: 1.5rem;
+      
+      padding: 2px;
+      margin-right: 5px;
+      cursor: pointer;
+      
+    }
+    
+    .logo .logo-text {
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .information .contactInfo .box{
+      position: relative;
+      padding:  0;
+      display: flex;
+    }
+    .information .contactInfo .box .icon{
+      width: 30px;
+      height: 30px;
+      display: flex;
+      
+    
+      font-size: 20px;
+      border-radius: 50%;
+    }
+    .information .contactInfo .box .text p{
+      margin-left: 25px;
+      display: flex;
+      font-size: 12px;
+      font-weight: 300;
+      flex-direction: column;
+    }
+    .contactForm h2{
+      font-size: 16px;
+      font-weight: 700;
+      color: #007ced;
+    }
+    body {
+     width: 100%;
+     height: 100vh;
+    }
+    
+
+
+  }
+  
+ 

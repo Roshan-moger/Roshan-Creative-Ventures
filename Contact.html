@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style-contctact.css">
+</head>
+<body>
+    <section class="Contact">
+       
+        <header>
+            <div class="logo">
+              <i class="fa-solid fa-r"></i>
+              <div class="logo-text">Roshan Moger</div>
+            </div>
+            <nav>
+              <div class="togglebtn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <ul class="navlinks">
+                <li><a href="#" style="text-decoration: none;">Home</a></li>
+                <li><a href="https://roshan-moger.github.io/My-portfolio/intoduction.html" style="text-decoration: none;">Introduction</a></li>
+                <li><a href="https://drive.google.com/file/d/1zK7Vzfj_dLX-Zw4TK4t_NZtHUKyUbvd3/view?usp=drivesdk" target="_blank" style="text-decoration: none;">Resume</a></li>
+                <li><a href="#" style="text-decoration: none;">Contact</a></li>
+              </ul>
+            </nav>
+          </header>
+    </section>
+    
+    <section class="cont">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>Please feel free to contact me if you need further information. It would be my pleasure.</p>
+        </div>
+        <div class="information">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa-solid fa-map-marker"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Address:</h3>
+                        <p>2nd floor<br>Sudarshan layout,<br>Near Nobel convent school,<br>Bannerghatta circle Bangalore,<br>Karnataka,<br>560083</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Phone:</h3>
+                        <p>+91-8970035508</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Email:</h3>
+                        <p>roshanmoger502@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form id="contactForm">
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" id="sendername" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox email">
+                        <input type="email" id="senderemail" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required="required" id="message"></textarea>
+                        <span>Type your Message</span>
+                    </div>
+                    <div class="inputBox">
+                        <button type="button" id="sendButton">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs@4.0.3/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com/dist/email.min.js"></script>
+
+    
+    <script>
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+        togglebtn.addEventListener("click", function() {
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        });
+        
+        document.getElementById('sendButton').addEventListener('click', function() {
+            sendEmail();
+        });
+        
+        function sendEmail() {
+            emailjs.init("tMpIC858AH-c-o5UY");
+            var params = {
+                sendername: document.querySelector("#sendername").value,
+                senderemail: document.querySelector("#senderemail").value,
+                message: document.querySelector("#message").value,
+            };
+            var serviceID = "service_kzj2few";
+            var templateID = "template_ejufbln";
+            
+            emailjs.send(serviceID, templateID, params)
+            .then(function(response) {
+                console.log("Message sent successfully:", response);
+                alert("Email Sent Successfully");
+            })
+            .catch(function(error) {
+                console.error("Error sending email:", error);
+                alert("Error sending email. Please try again later.");
+            });
+            
+        }
+    </script>
+</body>
+</html>

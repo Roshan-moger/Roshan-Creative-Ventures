@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roshan Moger</title>
+    <link rel="stylesheet" href="style10.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+   
+       
+          
+    <div class="container-fluid">
+        <div class="cont">
+            <div class="hero-header">
+                <div class="wrapper">
+                 <header>
+                    <div class="logo">
+                      <i class="fa-solid fa-r"></i>
+                      <div class="logo-text">Roshan Moger</div>
+                    </div>
+                    <nav>
+                      <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <ul class="navlinks">
+                        <li><a href="#" style="text-decoration: none;">Home</a></li>
+                        <li><a href="https://roshan-moger.github.io/My-portfolio/intoduction.html" style="text-decoration: none;">Introduction</a></li>
+                        <li><a href="https://drive.google.com/file/d/1zK7Vzfj_dLX-Zw4TK4t_NZtHUKyUbvd3/view?usp=drivesdk" target="_blank" style="text-decoration: none;">Resume</a></li>
+                        <li><a href="#" style="text-decoration: none;">Contact</a></li>
+                      </ul>
+                    </nav>
+                </header>
+                </div>
+            </div>
+            <div class="content">
+                <section class="top-section"> 
+                    <div>
+                        <h1 class="container">Roshan Shankar Moger</h1>
+                    </div>
+                </section>
+                <section class="about_section">
+                    <h2>Introduction:</h2>
+                    <p>
+                        Hello, I am <b>Roshan Shankar Moger.</b> Electrical and Electronics Graduate at NIEIT Mysore with a CGPA of 7.7. I completed my PU education at Anandashram Composite PU College in Bhatkal with a score of 78%, and I completed my high school education at Shree Durgaparameshwari High School in Alvekodi Bhatkal with a score of 95%. I am a quick learner, proficient in time management, and excel in teamwork.
+                        <br>I am a sports enthusiast and have played volleyball, throwball, football, handball, and hockey at the VTU level. I also enjoy drawing in my free time.
+                    </p>
+                </section>
+                <section class="biography">
+                    <h3>Skills:</h3>
+                    <ul class="skills">
+                        <li><b>Programming:</b> <span>C, Java, OOPs, JavaScript, HTML, CSS, SQL.</span></li>
+                        <li><b>Database:</b> <span>MySQL</span></li>
+                        <li><b>Framework:</b> <span>Bootstrap</span></li>
+                        <li><b >Tools and Utilities:</b> <span>Creative problem solving, Leadership, Quick learning, Adaptability.</span></li>
+                        <li><b>Soft Skills:</b> <span>Communication, Teamwork, Time management.</span></li>
+                    </ul>
+                </section>
+                <section class="biography">
+                    <h3>Projects:</h3>
+                    <ol class="container-fluid">
+                        <li>Machine Learning Based Energy Prediction Model for Grid connected solar Panel in NIE Institute
+                            of Technology:</li>
+                        <ul class="container-fluid">
+                            <li>Developed linear regression and polynomial regression models for energy prediction and compared the accuracy rates of the two models.</li>
+                            <li>Collected nearly 10,000 data samples along with weather constraints for each sample.</li>
+                            <li>Separated the dataset into 70 percent for training, 20 percent for testing, and 10 percent for accuracy testing.</li>
+                            <li>Predicted the upcoming energy generation by considering the weather data and compared the accuracy rates of the linear regression model and polynomial regression model.</li>
+                            <li>Built a user interface application to display the outcomes remotely.</li>
+                        </ul>
+                        <br>
+                        <li>Patient Health Monitoring System using IoT:</li>
+                        <ul class="container-fluid">
+                            <li>Created a device to collect body temperature and heartbeat in BPM (beats per minute).</li>
+                            <li>Implemented a Patient Health Monitoring System with the complete utilization of sensors, Arduino Uno, WIFI Module (ESP8266), and an IoT cloud (Thing Speak website used to store data collected by Arduino Uno).</li>
+                            <li>Built a device in such a way that the data collected by Arduino Uno is displayed on the Thing Speak website. By entering the email ID and password, the results can be viewed anywhere and on any device.</li>
+                        </ul>
+                        <br>
+                        <li>  My portfolio website</li>
+                        <ul class="container-fluid">
+                            <li>My project portfolio website serves as a showcase for my skills and achievements.</li>
+                            <li>The responsive design ensures an optimal browsing experience.</li>
+                        </ul>
+                    </ol>
+                </section>
+                
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.js"></script>
+    <script>
+      var togglebtn = document.querySelector(".togglebtn");
+      var nav = document.querySelector(".navlinks");
+      togglebtn.addEventListener("click", function() {
+        this.classList.toggle("click");
+        nav.classList.toggle("open");
+      });
+  
+      var typed = new Typed(".inputs", {
+        strings: ["BE Graduate", "EEE Graduate", "Full Stack Developer"],
+        typeSpeed: 60,
+        backSpeed: 45,
+        loop: true
+      });
+      
+    </script>
+</body>
+</html>

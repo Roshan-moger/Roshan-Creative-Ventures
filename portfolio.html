@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style7.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+  <div class="hero-header">
+    <div class="wrapper">
+      <header>
+        <div class="logo">
+          <i class="fa-solid fa-r"></i>
+          <div class="logo-text">Roshan Moger</div>
+        </div>
+        <nav>
+          <div class="togglebtn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="navlinks">
+            <li><a href="#" style="text-decoration: none;">Home</a></li>
+            <li><a href="https://roshan-moger.github.io/My-portfolio/intoduction.html" style="text-decoration: none;">Introduction</a></li>
+            <li><a href="https://drive.google.com/file/d/1zK7Vzfj_dLX-Zw4TK4t_NZtHUKyUbvd3/view?usp=drivesdk" target="_blank" style="text-decoration: none;">Resume</a></li>
+            <li><a href="#" style="text-decoration: none;">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+      <div class="cont">
+        <div class="hero-pic">
+          <img src="Roshan.jpg" alt="profile">
+        </div>
+        <div class="hero-text">
+          <h5>Hi, I'm <span class="inputs">BE Graduate</span></h5>
+          <h1>Roshan Moger</h1>
+          <p>An engineer with flexible, reliable and possess excellent time keeping skills. I am an enthusiastic, self-motivated, reliable, responsible, and hard-working person. I am a mature team worker and adaptable to all challenging situations. I am able to work well both in a team environment as well as using my initiative. I am energetic and eager to learn new skills.</p>
+          <div class="butn-grp">
+            <a href="https://drive.google.com/file/d/1zK7Vzfj_dLX-Zw4TK4t_NZtHUKyUbvd3/view?usp=drivesdk"  class="butn active" target="_blank" style="text-decoration: none;">Download CV</a>
+            <a href="#" class="butn"  style="text-decoration: none;">Contact</a>
+          </div>
+          <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/roshan-moger-197700198" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://instagram.com/roshan__moger?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/Roshan-moger" target="_blank"><i class="fa-brands fa-github"></i></a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.js"></script>
+  <script>
+    var togglebtn = document.querySelector(".togglebtn");
+    var nav = document.querySelector(".navlinks");
+    
+    togglebtn.addEventListener("click", function() {
+      this.classList.toggle("click");
+      nav.classList.toggle("open");
+   
+    });
+
+    var typed = new Typed(".inputs", {
+      strings: ["BE Graduate", "EEE Graduate", "Full Stack Developer"],
+      typeSpeed: 60,
+      backSpeed: 45,
+      loop: true
+    });
+    
+  </script>
+</body>
+</html>
